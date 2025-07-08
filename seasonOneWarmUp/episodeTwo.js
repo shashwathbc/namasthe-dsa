@@ -13,7 +13,8 @@ for(let i = 0; i< 20; i++){
 }
 
 
-for(let i = 0; i < 4; i = i+1){
-  console.log('Shash two');
+for(let i = 0; i < 4; i = i+1) {
+    // this for loop prints shash two times
+  console.log('Shash two'); //
 }
 
