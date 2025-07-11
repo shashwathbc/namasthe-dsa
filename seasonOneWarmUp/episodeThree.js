@@ -54,8 +54,9 @@ console.log(countNeg(arr2));
 
 //Q3:
 
+let arrLar = [-2,-3,-4,-5];
 function largestNumber(arr){
-    let largestNumber = 0;
+    let largestNumber = -Infinity;  // or we could have used arr[0]
     for(let i=0; i< arr.length; i++){
         if(arr[i] > largestNumber){
             largestNumber = arr[i];
@@ -64,4 +65,4 @@ function largestNumber(arr){
     return `Largest Number is ${largestNumber}`;
 }
 
-console.log(largestNumber(arr2));
+console.log(largestNumber(arrLar));
