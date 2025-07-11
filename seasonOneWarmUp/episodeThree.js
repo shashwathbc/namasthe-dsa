@@ -52,7 +52,7 @@ function countNeg(arr){
 console.log(countNeg(arr2));
 
 
-//Q3:
+//Q3: Find the largest number in an array
 
 let arrLar = [-2,-3,-4,-5];
 function largestNumber(arr){
@@ -66,3 +66,20 @@ function largestNumber(arr){
 }
 
 console.log(largestNumber(arrLar));
+
+
+
+// H.W : Q4:
+
+function smallestNumberInAnArray(arr){
+    let smallNum = Infinity; // or we could use arr[0];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] < smallNum){
+            smallNum = arr[i];
+        }
+    }
+    return `smallest number in this array is ${smallNum}`;
+}
+
+let arrq= [2,3,45,6,788,-3];
+console.log(smallestNumberInAnArray(arrq));
