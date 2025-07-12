@@ -19,7 +19,7 @@ function findSecondLargestNumberInArray(arr){
 return `Second largest number in an array is ${secondLargestNumber}`;
 }
 
-let arr2 = [-2,3,4,-5,-6];
+let arr2 = [-2,3,4,20,20,-5,-6];
 
 console.log(findSecondLargestNumberInArray(arr2));
 
@@ -34,7 +34,7 @@ function findSecondLargest(a){
     if(a[i] > fl){
         sl = fl;
         fl = a[i];
-    }else if(a[i] > sl){
+    }else if(a[i] > sl && a[i] != fl){
         sl = a[i];
     }
    }
