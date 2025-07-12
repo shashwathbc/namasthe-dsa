@@ -26,3 +26,20 @@ console.log(findSecondLargestNumberInArray(arr2));
 
 // Second solution : 
 
+function findSecondLargest(a){
+    if(a.length < 2) return null;
+    let fl = -Infinity;
+    let sl = -Infinity;
+   for(let i=0;i<a.length; i++){
+    if(a[i] > fl){
+        sl = fl;
+        fl = a[i];
+    }else if(a[i] > sl){
+        sl = a[i];
+    }
+   }
+   return `sl ${sl}`
+}
+
+console.log(findSecondLargest(arr2));
+
