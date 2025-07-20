@@ -11,6 +11,7 @@ function removeDuplicate(nums) {
             nums[x] = nums[i];
         }
     }
+    
 
     console.log(x + 1); // Number of unique elements
     console.log(nums.slice(0, x + 1)); // Optional: show the unique array
