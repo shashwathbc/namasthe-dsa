@@ -12,7 +12,7 @@ function merge(nums1, nums2, m , n){
 let i =0, j=0, l = m+n;
   let c= []
   for (x= 0; x<l; x++) {
-    if ((nums1[i] <= nums2[j] && i < m) || j >= n) {
+        if ((nums1[i] <= nums2[j] && i < m) || j >= n) {
         c.push(nums1[i])
         i++
     } else if ((nums2[j] < nums1[i] && j < n) || i >= m) {
@@ -43,4 +43,10 @@ merge([1,2,3,0,0,0],[2,5,6], 3, 3);
         nums1[i] = nums2[p2];
         p2++;
     }
+   }
+
+
+   function testLaptopKeyboards(){
+      const test = [];
+      
    }
