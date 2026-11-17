@@ -4,6 +4,7 @@
 let arrone = [1,3,5,7] 
 let arrtwo = [2,4,8,9]
 
+
 let mergeTwoSortedArr = (arrone, arrtwo) => {
     let i = 0;
     let j = 0;
